@@ -1,0 +1,7 @@
+com\avispl\symphony\dal\communicator\crestron\RoomBookingPanel.class
+com\avispl\symphony\dal\communicator\crestron\CustomHttpCommunicator$3.class
+com\avispl\symphony\dal\communicator\crestron\CustomHttpCommunicator$1.class
+com\avispl\symphony\dal\communicator\crestron\CustomHttpCommunicator$2.class
+com\avispl\symphony\dal\communicator\crestron\CustomHttpCommunicator$HttpResponse.class
+com\avispl\symphony\dal\communicator\crestron\JsonUtils.class
+com\avispl\symphony\dal\communicator\crestron\CustomHttpCommunicator.class

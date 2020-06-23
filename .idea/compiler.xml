@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="Serverlink-PDU" />
+        <module name="APC-PDU" />
+        <module name="Samsung-LCD" />
+        <module name="Extron-SMP" />
+        <module name="Poly-X30" />
+        <module name="iBoot-PDU" />
+        <module name="Crestron-Airmedia" />
+        <module name="Crestron-TouchPanel" />
+        <module name="Epson-Projector" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="APC-PDU" target="8" />
+      <module name="Crestron-Airmedia" target="8" />
+      <module name="Crestron-TouchPanel" target="8" />
+      <module name="Epson-Projector" target="8" />
+      <module name="Extron-SMP" target="8" />
+      <module name="iBoot-PDU" target="7" />
+      <module name="Poly-X30" target="8" />
+      <module name="Samsung-LCD" target="8" />
+      <module name="Serverlink-PDU" target="8" />
+      <module name="Symphony-DALs" target="8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

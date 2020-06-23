@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/APC-PDU/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/APC-PDU/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Crestron-Airmedia/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Crestron-Airmedia/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Crestron-TouchPanel/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Crestron-TouchPanel/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Epson-Projector/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Epson-Projector/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Extron-SMP/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Extron-SMP/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Poly-X30/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Poly-X30/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Samsung-LCD/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Samsung-LCD/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Serverlink-PDU/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Serverlink-PDU/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/iBoot-PDU/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/iBoot-PDU/src/main/resources" charset="UTF-8" />
+  </component>
+</project>

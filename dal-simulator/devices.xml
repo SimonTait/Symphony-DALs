@@ -1,0 +1,19 @@
+<devices>
+    <!--<device>
+        <jar>C:\Work\Symphony-DALs\Crestron-TouchPanel\target\Crestron-TouchPanel-2.0.jar</jar>
+        <deviceClassName>RoomBookingPanel</deviceClassName>
+        <properties>
+            <property name="host">10.152.66.33</property>
+            <property name="login">admin</property>
+            <property name="password">19881988</property>
+        </properties>
+    </device>-->
+    <device>
+        <jar>C:\Work\Symphony-DALs\Serverlink-PDU\target\Serverlink-PDU-1.1.jar</jar>
+        <deviceClassName>com.insightsystems.dal.serverlink.SLPSB1008H</deviceClassName>
+        <properties>
+            <property name="host">10.164.69.10</property>
+        </properties>
+    </device>
+
+</devices>
