@@ -26,186 +26,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="42f2a298-c3b8-4d31-9c15-2378b7e85f75" name="Default Changelist" comment="Add changelog + minor improvements">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/Symphony-DALs.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_9_10.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_6_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_9_10_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_jcraft_jsch_0_1_52.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_net_commons_net_3_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_14.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_java_dev_jna_jna_4_5_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_java_dev_jna_jna_platform_4_5_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_snmp4j_snmp4j_2_5_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_4_2_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_4_2_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_4_2_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_4_2_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_4_2_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_4_2_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/APC-PDU/APC-PDU.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/APC-PDU/lib/icmp4j-1018.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/APC-PDU/lib/symphony-api-commons-4.9.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/APC-PDU/lib/symphony-api-dal-4.9.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/APC-PDU/lib/symphony-dal-commons-4.9.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/APC-PDU/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/APC-PDU/src/main/java/com/insightsystems/dal/APC.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/APC-PDU/src/main/resources/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/APC-PDU/target/APC-PDU-1.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/APC-PDU/target/classes/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/APC-PDU/target/maven-archiver/pom.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Crestron-Airmedia/Crestron-Airmedia.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Crestron-Airmedia/lib/icmp4j-1018.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Crestron-Airmedia/lib/symphony-api-commons-4.9.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Crestron-Airmedia/lib/symphony-api-dal-4.9.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Crestron-Airmedia/lib/symphony-dal-commons-4.9.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Crestron-Airmedia/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Crestron-Airmedia/src/main/java/com/insightsystems/dal/crestron/AM300HttpCommunicator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Crestron-Airmedia/src/main/java/com/insightsystems/dal/crestron/AirMedia.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Crestron-Airmedia/src/main/java/com/insightsystems/dal/crestron/JsonUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Crestron-Airmedia/src/main/resources/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Crestron-Airmedia/target/Crestron-Airmedia-1.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Crestron-Airmedia/target/classes/com/insightsystems/dal/crestron/AM300HttpCommunicator$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Crestron-Airmedia/target/classes/com/insightsystems/dal/crestron/AM300HttpCommunicator$2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Crestron-Airmedia/target/classes/com/insightsystems/dal/crestron/AM300HttpCommunicator$HttpResponse.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Crestron-Airmedia/target/classes/com/insightsystems/dal/crestron/AM300HttpCommunicator.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Crestron-Airmedia/target/classes/com/insightsystems/dal/crestron/AirMedia.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Crestron-Airmedia/target/classes/com/insightsystems/dal/crestron/JsonUtils.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Crestron-Airmedia/target/classes/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Crestron-Airmedia/target/maven-archiver/pom.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Crestron-Airmedia/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Crestron-Airmedia/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Crestron-TouchPanel/Crestron-TouchPanel.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Crestron-TouchPanel/lib/icmp4j-1018.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Crestron-TouchPanel/lib/symphony-api-commons-4.9.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Crestron-TouchPanel/lib/symphony-api-dal-4.9.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Crestron-TouchPanel/lib/symphony-dal-commons-4.9.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Crestron-TouchPanel/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Crestron-TouchPanel/src/main/java/com/avispl/symphony/dal/communicator/crestron/CustomHttpCommunicator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Crestron-TouchPanel/src/main/java/com/avispl/symphony/dal/communicator/crestron/JsonUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Crestron-TouchPanel/src/main/java/com/avispl/symphony/dal/communicator/crestron/RoomBookingPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Crestron-TouchPanel/src/main/resources/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Crestron-TouchPanel/target/Crestron-TouchPanel-2.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Crestron-TouchPanel/target/classes/com/avispl/symphony/dal/communicator/crestron/CustomHttpCommunicator$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Crestron-TouchPanel/target/classes/com/avispl/symphony/dal/communicator/crestron/CustomHttpCommunicator$2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Crestron-TouchPanel/target/classes/com/avispl/symphony/dal/communicator/crestron/CustomHttpCommunicator$3.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Crestron-TouchPanel/target/classes/com/avispl/symphony/dal/communicator/crestron/CustomHttpCommunicator$HttpResponse.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Crestron-TouchPanel/target/classes/com/avispl/symphony/dal/communicator/crestron/CustomHttpCommunicator.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Crestron-TouchPanel/target/classes/com/avispl/symphony/dal/communicator/crestron/JsonUtils.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Crestron-TouchPanel/target/classes/com/avispl/symphony/dal/communicator/crestron/RoomBookingPanel.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Crestron-TouchPanel/target/classes/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Crestron-TouchPanel/target/maven-archiver/pom.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Crestron-TouchPanel/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Crestron-TouchPanel/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DALs.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Epson-Projector/Epson-Projector.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Epson-Projector/lib/icmp4j-1018.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Epson-Projector/lib/symphony-api-commons-4.9.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Epson-Projector/lib/symphony-api-dal-4.9.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Epson-Projector/lib/symphony-dal-commons-4.9.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Epson-Projector/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Epson-Projector/src/main/java/com/insightsystems/dal/epson/EpsonProjector.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Epson-Projector/src/main/java/com/insightsystems/dal/epson/EpsonTcpSocketCommunicator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Epson-Projector/src/main/resources/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Epson-Projector/target/Epson-Projector-1.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Epson-Projector/target/classes/com/insightsystems/dal/epson/EpsonProjector.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Epson-Projector/target/classes/com/insightsystems/dal/epson/EpsonTcpSocketCommunicator.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Epson-Projector/target/classes/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Epson-Projector/target/maven-archiver/pom.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Extron-SMP/Extron-SMP.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Extron-SMP/lib/icmp4j-1018.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Extron-SMP/lib/symphony-api-commons-4.9.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Extron-SMP/lib/symphony-api-dal-4.9.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Extron-SMP/lib/symphony-dal-commons-4.9.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Extron-SMP/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Extron-SMP/src/main/java/com/insightsystems/dal/extron/SMPRecorder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Extron-SMP/src/main/resources/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Extron-SMP/target/Extron-SMP-1.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Extron-SMP/target/classes/com/insightsystems/dal/extron/SMPRecorder$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Extron-SMP/target/classes/com/insightsystems/dal/extron/SMPRecorder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Extron-SMP/target/classes/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Extron-SMP/target/maven-archiver/pom.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Extron-SMP/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Extron-SMP/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Poly-X30/Poly-X30.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Poly-X30/lib/icmp4j-1018.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Poly-X30/lib/symphony-api-commons-4.9.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Poly-X30/lib/symphony-api-dal-4.9.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Poly-X30/lib/symphony-dal-commons-4.9.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Poly-X30/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Poly-X30/src/main/java/com/insightsystems/dal/poly/x30.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Poly-X30/src/main/resources/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Poly-X30/target/Poly-X30-1.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Poly-X30/target/classes/com/insightsystems/dal/poly/x30$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Poly-X30/target/classes/com/insightsystems/dal/poly/x30.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Poly-X30/target/classes/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Poly-X30/target/maven-archiver/pom.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Poly-X30/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Poly-X30/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Samsung-LCD/Samsung-LCD.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Samsung-LCD/lib/icmp4j-1018.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Samsung-LCD/lib/symphony-api-commons-4.9.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Samsung-LCD/lib/symphony-api-dal-4.9.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Samsung-LCD/lib/symphony-dal-commons-4.9.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Samsung-LCD/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Samsung-LCD/src/main/java/com/insightsystems/dal/samsung/LCD.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Samsung-LCD/src/main/resources/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Samsung-LCD/target/Samsung-LCD-1.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Samsung-LCD/target/classes/com/insightsystems/dal/samsung/LCD.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Samsung-LCD/target/classes/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Samsung-LCD/target/maven-archiver/pom.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Samsung-LCD/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Samsung-LCD/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Serverlink-PDU/Serverlink-PDU.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Serverlink-PDU/lib/icmp4j-1018.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Serverlink-PDU/lib/symphony-api-commons-4.9.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Serverlink-PDU/lib/symphony-api-dal-4.9.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Serverlink-PDU/lib/symphony-dal-commons-4.9.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Serverlink-PDU/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Serverlink-PDU/src/main/java/com/insightsystems/dal/serverlink/SLPSB1008H.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Serverlink-PDU/src/main/resources/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Serverlink-PDU/target/Serverlink-PDU-1.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Serverlink-PDU/target/classes/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Serverlink-PDU/target/maven-archiver/pom.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dal-simulator/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dal-simulator/devices.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dal-simulator/lib/sshd-common-2.2.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dal-simulator/lib/sshd-core-2.2.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dal-simulator/startSimulator.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dal-simulator/symphony-dal-simulator.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/iBoot-PDU/iBoot-PDU.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/iBoot-PDU/lib/icmp4j-1018.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/iBoot-PDU/lib/symphony-api-commons-4.9.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/iBoot-PDU/lib/symphony-api-dal-4.9.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/iBoot-PDU/lib/symphony-dal-commons-4.9.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/iBoot-PDU/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/iBoot-PDU/src/main/java/com/insightsystems/dal/dataprobe/iBootPDU.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/iBoot-PDU/src/main/resources/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/iBoot-PDU/target/classes/com/insightsystems/dal/dataprobe/iBootPDU$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/iBoot-PDU/target/classes/com/insightsystems/dal/dataprobe/iBootPDU.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/iBoot-PDU/target/classes/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/iBoot-PDU/target/iBoot-PDU-1.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/iBoot-PDU/target/maven-archiver/pom.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/icmp4j-1018.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/symphony-api-commons-4.9.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/symphony-api-dal-4.9.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/symphony-dal-commons-4.9.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Symphony-DALs.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Symphony-DALs.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_6_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_9_10_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_9_10_5.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APC-PDU/APC-PDU.iml" beforeDir="false" afterPath="$PROJECT_DIR$/APC-PDU/APC-PDU.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Crestron-Airmedia/Crestron-Airmedia.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Crestron-Airmedia/Crestron-Airmedia.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Crestron-TouchPanel/Crestron-TouchPanel.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Crestron-TouchPanel/Crestron-TouchPanel.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Epson-Projector/Epson-Projector.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Epson-Projector/Epson-Projector.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Extron-SMP/Extron-SMP.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Extron-SMP/Extron-SMP.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Poly-X30/Poly-X30.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Poly-X30/Poly-X30.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Samsung-LCD/Samsung-LCD.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Samsung-LCD/Samsung-LCD.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Serverlink-PDU/Serverlink-PDU.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Serverlink-PDU/Serverlink-PDU.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iBoot-PDU/iBoot-PDU.iml" beforeDir="false" afterPath="$PROJECT_DIR$/iBoot-PDU/iBoot-PDU.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -248,6 +82,7 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="GitIgnore" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -375,7 +210,14 @@
       <option name="project" value="LOCAL" />
       <updated>1592807817945</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Initial Commit">
+      <created>1592891592911</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1592891592911</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -422,6 +264,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1592890635258" />
+    <state x="821" y="418" key="Github.ShareDialog" timestamp="1592891987946">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="821" y="418" key="Github.ShareDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1592891987946" />
     <state width="1877" height="278" key="GridCell.Tab.0.bottom" timestamp="1592891448263">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
