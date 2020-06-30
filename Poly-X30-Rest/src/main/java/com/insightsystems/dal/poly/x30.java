@@ -6,7 +6,11 @@ import com.avispl.symphony.api.dal.dto.control.ControllableProperty;
 import com.avispl.symphony.api.dal.dto.monitor.*;
 import com.avispl.symphony.api.dal.monitor.Monitorable;
 import com.avispl.symphony.api.dal.ping.Pingable;
+import com.avispl.symphony.dal.communicator.RestCommunicator;
 import com.avispl.symphony.dal.communicator.TelnetCommunicator;
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.node.ArrayNode;
 
 import javax.security.auth.login.FailedLoginException;
 import java.util.*;
@@ -21,51 +25,82 @@ import static java.lang.Math.round;
  **** v1.0
  *
  */
-public class x30 extends TelnetCommunicator implements Controller, Monitorable, Pingable {
-    final String queryGatekeeperIp = "gatekeeperip get", querySipRegistrar = "systemsetting get sipregistrarserver",queryH323Enable ="systemsetting get iph323enable",querySipEnable = "systemsetting get sipenable",queryStatus = "status";
-    final String queryNetStats = "netstats",queryCallInfo = "callinfo all",queryUptime = "uptime get",queryDeviceInfo = "whoami",queryAdvStats = "advnetstats",queryNearAudioMute = "mute near get",queryNearVideoMute = "videomute near get";
-    final String queryCalendarEnabled = "calendarregisterwithserver get",queryCalendarResource = "calendarresource get",queryCalendarServer= "calendarserver get",queryCalendarStatus = "calendarstatus get", queryVolume = "volume get";
-    final String cmdReboot = "reboot now",cmdWake = "wake",cmdVolume = "volume set ";
-
+public class x30 extends RestCommunicator implements Controller, Monitorable, Pingable {
+    private ObjectMapper objectMapper;
     public x30(){
-        this.setPort(24);
-        this.setLogin("admin");
-        this.setCommandSuccessList(Collections.singletonList(""));
-        this.setCommandErrorList(Collections.singletonList("Something else"));
-        this.setLoginSuccessList(Collections.singletonList(""));
-        this.setLoginErrorList(Collections.singletonList("-- password failed, retry --"));
-        this.setPasswordPrompt("Password:\n");
+        objectMapper = new ObjectMapper();
+        this.setAuthenticationScheme(AuthenticationScheme.None);
+        this.setContentType("application/json");
+        this.setProtocol("https");
+        this.setPort(443);
+        this.setTrustAllCertificates(true);
     }
 
     @Override
-    protected boolean doneReadingAfterConnect(String response) throws FailedLoginException {
-        //System.out.println(response);
-        return super.doneReadingAfterConnect(response);
+    protected void authenticate() throws Exception {
+        System.out.println("Sending authentication to the device");
+        this.doPost("rest/current/session","{\"user\":\""+this.getLogin()+"\",\"password\":\""+this.getPassword() +"\"}");
     }
 
     @Override
     public List<Statistics> getMultipleStatistics() throws Exception {
+        List<Statistics> output = new ArrayList<>();
         EndpointStatistics endStats = new EndpointStatistics();
         ExtendedStatistics extStat = new ExtendedStatistics();
 
-        final String netStats = send(queryNetStats);
-        final String status = send(queryStatus);
-
-        endStats.setCallStats(getCallStats(netStats));
-        endStats.setRegistrationStatus(getRegistrationStatus(status));
-        endStats.setInCall(getInCall());
-
-        if (endStats.isInCall()) {
-            final String advNetStats = send(queryAdvStats);
-            endStats.setAudioChannelStats(getAudioChannelStats(netStats,advNetStats));
-            endStats.setVideoChannelStats(getVideoChannelStats(netStats,advNetStats));
-            endStats.setContentChannelStats(getContentChannelStats(netStats,advNetStats));
+        String sipServer;
+        try {
+            sipServer = this.doGet("/rest/system/sipservers");
+        } catch (Exception e) {
+            if (e.getCause().getMessage().contains("403")) {
+                authenticate();
+                sipServer = this.doGet("/rest/system/sipservers");
+            } else {
+                throw e;
+            }
         }
 
-        final float volume = parseFloat(send(queryVolume));
-        extStat.setControllableProperties(getControls(volume));
-        extStat.setStatistics(getSystemStatistics(status,volume));
-        return new ArrayList<Statistics>(){{add(endStats);add(extStat);}};
+        final JsonNode sipStatus = objectMapper.readTree(sipServer).get(0);
+        final JsonNode h323Status = objectMapper.readTree(this.doGet("rest/system/h323gatekeepers")).get(0);
+
+        if (!h323Status.at("/state").asText().equals("DOWN") || !sipStatus.at("/state").asText().equals("DOWN")){
+            if (!sipStatus.at("/state").asText().equals("DOWN")) {
+                //todo get sip statis
+            }
+
+            if (!h323Status.at("/state").asText().equals("DOWN")) {
+                //todo get h323 stats
+            }
+            output.add(endStats);
+        }
+
+        final JsonNode audioStats = objectMapper.readTree(this.doGet("rest/audio"));
+        final ArrayNode conferences = (ArrayNode)objectMapper.readTree(this.doGet("rest/conferences"));
+        if (conferences.size() > 0){
+            //Read the statistics
+        }
+        System.out.println(doGet("/rest/mediastats"));
+
+
+
+        //        final String netStats = send(queryNetStats);
+//        final String status = send(queryStatus);
+
+//        endStats.setCallStats(getCallStats(netStats));
+//        endStats.setRegistrationStatus(getRegistrationStatus(status));
+//        endStats.setInCall(getInCall());
+//
+//        if (endStats.isInCall()) {
+//            final String advNetStats = send(queryAdvStats);
+//            endStats.setAudioChannelStats(getAudioChannelStats(netStats,advNetStats));
+//            endStats.setVideoChannelStats(getVideoChannelStats(netStats,advNetStats));
+//            endStats.setContentChannelStats(getContentChannelStats(netStats,advNetStats));
+//        }
+//
+//        final float volume = parseFloat(send(queryVolume));
+//        extStat.setControllableProperties(getControls(volume));
+//        extStat.setStatistics(getSystemStatistics(status,volume));
+        return output;
     }
 
     private List<AdvancedControllableProperty> getControls(float volume) {
@@ -117,7 +152,7 @@ public class x30 extends TelnetCommunicator implements Controller, Monitorable, 
         videoStats.setPacketLossRx(parseInt(regexFind(advNetStats,"rvpl:([\\d]+)")));
         videoStats.setPacketLossTx(parseInt(regexFind(advNetStats,"tvpl:([\\d]+)")));
         videoStats.setCodec(regexFind(netStats,"tvp:([^ ]+)"));
-        videoStats.setMuteTx(send(queryNearVideoMute).contains("on"));
+//        videoStats.setMuteTx(send(queryNearVideoMute).contains("on"));
         return videoStats;
     }
 
@@ -130,31 +165,31 @@ public class x30 extends TelnetCommunicator implements Controller, Monitorable, 
         audioStats.setJitterTx(parseFloat(regexFind(advStats,"taj:([\\d.]+)")));
         audioStats.setPacketLossRx(parseInt(regexFind(advStats,"rapl:([\\d]+(?: K)?)")));
         audioStats.setPacketLossTx(parseInt(regexFind(advStats,"tapl:([\\d]+(?: K)?)")));
-        audioStats.setMuteTx(send(queryNearAudioMute).contains("on"));
+//        audioStats.setMuteTx(send(queryNearAudioMute).contains("on"));
         return audioStats;
     }
 
     private Map<String, String> getSystemStatistics(String status,float volume) throws Exception {
         Map<String,String> stats = new HashMap<>();
-        stats.put("uptime",send(queryUptime));
-        final String deviceInfo = send(queryDeviceInfo);
-        stats.put("deviceName",regexFind(deviceInfo,"name is : *([^\\n\\r]+)"));
-        stats.put("deviceModel",regexFind(deviceInfo,"Model: *([^\\n\\r]+)"));
-        stats.put("serialNumber",regexFind(deviceInfo,"Serial Number: *([^\\n\\r]+)"));
-        stats.put("softwareVersion",regexFind(deviceInfo,"Software Version: *([^\\n\\r]+)"));
-        stats.put("buildInfo",regexFind(deviceInfo,"Build Information: *([^\\n\\r]+)"));
-        stats.put("timeInLastCall",regexFind(deviceInfo,"Time In Last Call: *([^\\n\\r]+)"));
-        stats.put("totalCallTime",regexFind(deviceInfo,"Total Time In Calls: *([^\\n\\r]+)"));
-        stats.put("totalCalls",regexFind(deviceInfo,"Total Calls: *([^\\n\\r]+)"));
-        stats.put("deviceTime",regexFind(deviceInfo,"Local Time is: *([^\\n\\r]+)"));
-        stats.put("microphoneState",regexFind(status,"microphones (online|offline)"));
-        stats.put("globalDirectory",regexFind(status,"globaldirectory (online|offline)"));
-        if (send(queryCalendarEnabled).contains("yes")){ //If the calendar resource isn't empty
-            stats.put("calendarService",regexFind(status,"calendar (online|offline)"));
-            stats.put("calendarResource",send(queryCalendarResource).replace("calendarresource ","").replaceAll("\"",""));
-            stats.put("calendarServer",send(queryCalendarServer).replace("calendarserver ","").replaceAll("\"",""));
-            stats.put("calendarStatus",send(queryCalendarStatus).replace("calendarstatus",""));
-        }
+//        stats.put("uptime",send(queryUptime));
+//        final String deviceInfo = send(queryDeviceInfo);
+//        stats.put("deviceName",regexFind(deviceInfo,"name is : *([^\\n\\r]+)"));
+//        stats.put("deviceModel",regexFind(deviceInfo,"Model: *([^\\n\\r]+)"));
+//        stats.put("serialNumber",regexFind(deviceInfo,"Serial Number: *([^\\n\\r]+)"));
+//        stats.put("softwareVersion",regexFind(deviceInfo,"Software Version: *([^\\n\\r]+)"));
+//        stats.put("buildInfo",regexFind(deviceInfo,"Build Information: *([^\\n\\r]+)"));
+//        stats.put("timeInLastCall",regexFind(deviceInfo,"Time In Last Call: *([^\\n\\r]+)"));
+//        stats.put("totalCallTime",regexFind(deviceInfo,"Total Time In Calls: *([^\\n\\r]+)"));
+//        stats.put("totalCalls",regexFind(deviceInfo,"Total Calls: *([^\\n\\r]+)"));
+//        stats.put("deviceTime",regexFind(deviceInfo,"Local Time is: *([^\\n\\r]+)"));
+//        stats.put("microphoneState",regexFind(status,"microphones (online|offline)"));
+//        stats.put("globalDirectory",regexFind(status,"globaldirectory (online|offline)"));
+//        if (send(queryCalendarEnabled).contains("yes")){ //If the calendar resource isn't empty
+//            stats.put("calendarService",regexFind(status,"calendar (online|offline)"));
+//            stats.put("calendarResource",send(queryCalendarResource).replace("calendarresource ","").replaceAll("\"",""));
+//            stats.put("calendarServer",send(queryCalendarServer).replace("calendarserver ","").replaceAll("\"",""));
+//            stats.put("calendarStatus",send(queryCalendarStatus).replace("calendarstatus",""));
+//        }
 
         //Statistics for control properties
         stats.put("volume",String.valueOf(volume));
@@ -185,50 +220,51 @@ public class x30 extends TelnetCommunicator implements Controller, Monitorable, 
 
     private RegistrationStatus getRegistrationStatus(String status) throws Exception {
         RegistrationStatus registrationStatus = new RegistrationStatus();
-        if (send(queryH323Enable).contains("true")){
-            final String gateKeeperIP = send(queryGatekeeperIp).replace("gatekeeperip ","");
-            if (!gateKeeperIP.contains("\"\"")){
-                registrationStatus.setH323Gatekeeper(gateKeeperIP);
-            } else {
-                registrationStatus.setH323Gatekeeper("");
-            }
-            registrationStatus.setH323Registered(regexFind(status,"gatekeeper (online|offline)").equals("online"));
-        } else {
-            registrationStatus.setH323Registered(false);
-            registrationStatus.setH323Details("H.323 is disabled.");
-        }
+//        if (send(queryH323Enable).contains("true")){
+//            final String gateKeeperIP = send(queryGatekeeperIp).replace("gatekeeperip ","");
+//            if (!gateKeeperIP.contains("\"\"")){
+//                registrationStatus.setH323Gatekeeper(gateKeeperIP);
+//            } else {
+//                registrationStatus.setH323Gatekeeper("");
+//            }
+//            registrationStatus.setH323Registered(regexFind(status,"gatekeeper (online|offline)").equals("online"));
+//        } else {
+//            registrationStatus.setH323Registered(false);
+//            registrationStatus.setH323Details("H.323 is disabled.");
+//        }
 
-        if (send(querySipEnable).contains("true")){
-            final String sipRegistrar = send(querySipRegistrar).replace("systemsetting sipregistrarserver ","");
-            if (!sipRegistrar.contains("\"\"")){
-                registrationStatus.setSipRegistrar(sipRegistrar);
-            } else {
-                registrationStatus.setSipRegistrar("");
-            }
-            registrationStatus.setSipRegistered(regexFind(status,"sipserver (online|offline)").equals("online"));
-        } else {
-            registrationStatus.setSipRegistered(false);
-            registrationStatus.setSipDetails("SIP is disabled.");
-        }
+//        if (send(querySipEnable).contains("true")){
+//            final String sipRegistrar = send(querySipRegistrar).replace("systemsetting sipregistrarserver ","");
+//            if (!sipRegistrar.contains("\"\"")){
+//                registrationStatus.setSipRegistrar(sipRegistrar);
+//            } else {
+//                registrationStatus.setSipRegistrar("");
+//            }
+//            registrationStatus.setSipRegistered(regexFind(status,"sipserver (online|offline)").equals("online"));
+//        } else {
+//            registrationStatus.setSipRegistered(false);
+//            registrationStatus.setSipDetails("SIP is disabled.");
+//        }
         return registrationStatus;
     }
 
     private boolean getInCall() throws Exception {
-        final String callInfo = send(queryCallInfo);
-        return !callInfo.equals("system is not in a call");
+//        final String callInfo = send(queryCallInfo);
+//        return !callInfo.equals("system is not in a call");
+        return true;
     }
 
     @Override
     public void controlProperty(ControllableProperty cp) throws Exception {
         switch (cp.getProperty()){
             case "reboot":
-                send(cmdReboot);
+
                 break;
             case "wake":
-                send(cmdWake);
+
                 break;
             case "volume":
-                send(cmdVolume + round((float) cp.getValue()));
+
                 break;
         }
     }
@@ -254,9 +290,11 @@ public class x30 extends TelnetCommunicator implements Controller, Monitorable, 
 
     public static void main(String[] args) throws Exception {
         x30 device = new x30();
-        device.setHost("192.168.0.76");
-        device.setPassword("522EFC");
+        device.setHost("192.168.0.156");
+        device.setLogin("admin");
+        device.setPassword("insight1272726!");
         device.init();
+        //device.authenticate();
         device.getMultipleStatistics();
     }
 }
