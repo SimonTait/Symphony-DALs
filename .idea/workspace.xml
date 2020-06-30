@@ -26,35 +26,39 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="42f2a298-c3b8-4d31-9c15-2378b7e85f75" name="Default Changelist" comment="Add changelog + minor improvements">
-      <change afterPath="$PROJECT_DIR$/Poly-X30-Rest/Poly-X30 (1).iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Poly-X30-Rest/Poly-X30.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Poly-X30-Rest/lib/icmp4j-1018.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Poly-X30-Rest/lib/symphony-api-commons-4.9.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Poly-X30-Rest/lib/symphony-api-dal-4.9.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Poly-X30-Rest/lib/symphony-dal-commons-4.9.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Poly-X30-Rest/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Poly-X30-Rest/src/main/java/com/insightsystems/dal/poly/x30.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Poly-X30-Rest/src/main/resources/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Samsung-LCD/src/main/java/com/insightsystems/dal/samsung/TcpSocketCommunicator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Crestron-Airmedia/src/main/java/com/insightsystems/dal/crestron/AirMedia.java" beforeDir="false" afterPath="$PROJECT_DIR$/Crestron-Airmedia/src/main/java/com/insightsystems/dal/crestron/AirMedia.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Crestron-TouchPanel/src/main/java/com/avispl/symphony/dal/communicator/crestron/RoomBookingPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/Crestron-TouchPanel/src/main/java/com/avispl/symphony/dal/communicator/crestron/RoomBookingPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Crestron-TouchPanel/target/classes/com/avispl/symphony/dal/communicator/crestron/RoomBookingPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/Crestron-TouchPanel/target/classes/com/avispl/symphony/dal/communicator/crestron/RoomBookingPanel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Epson-Projector/src/main/java/com/insightsystems/dal/epson/EpsonProjector.java" beforeDir="false" afterPath="$PROJECT_DIR$/Epson-Projector/src/main/java/com/insightsystems/dal/epson/EpsonProjector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Epson-Projector/src/main/java/com/insightsystems/dal/epson/EpsonTcpSocketCommunicator.java" beforeDir="false" afterPath="$PROJECT_DIR$/Epson-Projector/src/main/java/com/insightsystems/dal/epson/EpsonTcpSocketCommunicator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Epson-Projector/target/classes/com/insightsystems/dal/epson/EpsonProjector.class" beforeDir="false" afterPath="$PROJECT_DIR$/Epson-Projector/target/classes/com/insightsystems/dal/epson/EpsonProjector.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Epson-Projector/target/classes/com/insightsystems/dal/epson/EpsonTcpSocketCommunicator.class" beforeDir="false" afterPath="$PROJECT_DIR$/Epson-Projector/target/classes/com/insightsystems/dal/epson/EpsonTcpSocketCommunicator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Poly-X30/src/main/java/com/insightsystems/dal/poly/x30.java" beforeDir="false" afterPath="$PROJECT_DIR$/Poly-X30/src/main/java/com/insightsystems/dal/poly/x30.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Poly-X30/target/classes/com/insightsystems/dal/poly/x30$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Poly-X30/target/classes/com/insightsystems/dal/poly/x30.class" beforeDir="false" afterPath="$PROJECT_DIR$/Poly-X30/target/classes/com/insightsystems/dal/poly/x30.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Samsung-LCD/src/main/java/com/insightsystems/dal/samsung/LCD.java" beforeDir="false" afterPath="$PROJECT_DIR$/Samsung-LCD/src/main/java/com/insightsystems/dal/samsung/LCD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Samsung-LCD/target/classes/com/insightsystems/dal/samsung/LCD.class" beforeDir="false" afterPath="$PROJECT_DIR$/Samsung-LCD/target/classes/com/insightsystems/dal/samsung/LCD.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Symphony-DALs.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_9_10.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_9_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_9_10_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_jcraft_jsch_0_1_52.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_net_commons_net_3_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_14.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_java_dev_jna_jna_4_5_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_java_dev_jna_jna_platform_4_5_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_snmp4j_snmp4j_2_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_4_2_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_4_2_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_4_2_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_4_2_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_4_2_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_4_2_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Poly-X30-Rest/Poly-X30 (1).iml" beforeDir="false" afterPath="$PROJECT_DIR$/Poly-X30-Rest/Poly-X30 (1).iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Poly-X30/Poly-X30.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Poly-X30/Poly-X30.iml" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -78,7 +82,6 @@
     </option>
     <option name="importingSettings">
       <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
         <option name="jdkForImporter" value="1.8" />
         <option name="vmOptionsForImporter" value="-Xmx768m" />
       </MavenImportingSettings>
@@ -107,8 +110,17 @@
     <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.importing" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Work\Symphony-DALs\" />
+      <recent name="C:\Work\Symphony-DALs\Poly-X30\lib" />
+      <recent name="C:\Work\Symphony-DALs\src\main\resources" />
+      <recent name="C:\Work\Symphony-DALs\Extron-SMP\src\main\java" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.insightsystems.dal.samsung" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Programming\Git\Symphony-DALs" />
@@ -117,31 +129,10 @@
       <recent name="C:\Work\Symphony-DALs\Poly-X30\src\main" />
       <recent name="C:\Work\Symphony-DALs\iBoot-PDU\src\main" />
     </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.insightsystems.dal.samsung" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Work\Symphony-DALs\" />
-      <recent name="C:\Work\Symphony-DALs\Poly-X30\lib" />
-      <recent name="C:\Work\Symphony-DALs\src\main\resources" />
-      <recent name="C:\Work\Symphony-DALs\Extron-SMP\src\main\java" />
-    </key>
   </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="mvn package" />
-    </option>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
     </option>
   </component>
   <component name="RunManager" selected="Application.LCD">
@@ -260,13 +251,12 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />

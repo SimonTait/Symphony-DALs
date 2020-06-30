@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8825c148-c710-4214-8a03-cc6ac3dfccaf" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../APC-PDU/target/APC-PDU-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../APC-PDU/target/APC-PDU-1.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../APC-PDU/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../APC-PDU/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Crestron-Airmedia/target/Crestron-Airmedia-1.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../Crestron-Airmedia/target/Crestron-Airmedia-1.1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Crestron-Airmedia/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../Crestron-Airmedia/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Crestron-TouchPanel.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/avispl/symphony/dal/communicator/crestron/JsonUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/avispl/symphony/dal/communicator/crestron/JsonUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Crestron-TouchPanel-2.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/avispl/symphony/dal/communicator/crestron/JsonUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/avispl/symphony/dal/communicator/crestron/JsonUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/avispl/symphony/dal/communicator/crestron/RoomBookingPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/avispl/symphony/dal/communicator/crestron/RoomBookingPanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Epson-Projector/target/Epson-Projector-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../Epson-Projector/target/Epson-Projector-1.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Epson-Projector/target/classes/com/insightsystems/dal/epson/EpsonProjector.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Epson-Projector/target/classes/com/insightsystems/dal/epson/EpsonProjector.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Epson-Projector/target/classes/com/insightsystems/dal/epson/EpsonTcpSocketCommunicator.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Epson-Projector/target/classes/com/insightsystems/dal/epson/EpsonTcpSocketCommunicator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Epson-Projector/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../Epson-Projector/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Extron-SMP/target/Extron-SMP-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../Extron-SMP/target/Extron-SMP-1.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Extron-SMP/target/classes/com/insightsystems/dal/extron/SMPRecorder$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Extron-SMP/target/classes/com/insightsystems/dal/extron/SMPRecorder$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Extron-SMP/target/classes/com/insightsystems/dal/extron/SMPRecorder.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Extron-SMP/target/classes/com/insightsystems/dal/extron/SMPRecorder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Extron-SMP/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../Extron-SMP/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Poly-X30/target/Poly-X30-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../Poly-X30/target/Poly-X30-1.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Poly-X30/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../Poly-X30/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Samsung-LCD/target/Samsung-LCD-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../Samsung-LCD/target/Samsung-LCD-1.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Samsung-LCD/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../Samsung-LCD/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Serverlink-PDU/target/Serverlink-PDU-1.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Serverlink-PDU/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../Serverlink-PDU/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iBoot-PDU/target/iBoot-PDU-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../iBoot-PDU/target/iBoot-PDU-1.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iBoot-PDU/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../iBoot-PDU/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../pom.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1di57gg8JDJ69PSQfzgA7TZOrZl" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn package" />
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="RoomBookingPanel" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.avispl.symphony.dal.communicator.crestron.RoomBookingPanel" />
+      <module name="RoomBookingPanel" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.avispl.symphony.dal.communicator.crestron.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.RoomBookingPanel" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8825c148-c710-4214-8a03-cc6ac3dfccaf" name="Default Changelist" comment="" />
+      <created>1592894906104</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1592894906104</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1592894945564">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1592894945564" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1592894913611">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1592894913611" />
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1592895775753">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1592895775753" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1592895775753">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1592895775753" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1592895775752">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1592895775752" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1592895775753">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1592895775753" />
+    <state x="362" y="153" key="new project wizard" timestamp="1592895773924">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="362" y="153" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1592895773924" />
+    <state x="616" y="240" width="672" height="677" key="run.anything.popup" timestamp="1592895104765">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" width="672" height="677" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1592895104765" />
+  </component>
+</project>

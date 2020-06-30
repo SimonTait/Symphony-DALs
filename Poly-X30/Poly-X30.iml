@@ -1,19 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule="true" type="JAVA_MODULE" version="4">
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
-    <output url="file://$MODULE_DIR$/target/classes" />
-    <output-test url="file://$MODULE_DIR$/target/test-classes" />
+    <output url="file://$MODULE_DIR$/../Poly-X30-Rest/target/classes" />
+    <output-test url="file://$MODULE_DIR$/../Poly-X30-Rest/target/test-classes" />
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/src/main/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/main/resources" type="java-resource" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
+    </content>
+    <content url="file://$MODULE_DIR$/../Poly-X30-Rest/src/main/java">
+      <sourceFolder url="file://$MODULE_DIR$/../Poly-X30-Rest/src/main/java" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../Poly-X30-Rest/src/main/resources">
+      <sourceFolder url="file://$MODULE_DIR$/../Poly-X30-Rest/src/main/resources" type="java-resource" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module-library">
       <library name="Maven: com.avispl.symphony.api:symphony-api-commons:4.9.1">
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/lib/symphony-api-commons-4.9.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/../Poly-X30-Rest/lib/symphony-api-commons-4.9.1.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -22,7 +28,7 @@
     <orderEntry type="module-library">
       <library name="Maven: com.avispl.symphony.api:symphony-api-dal:4.9.1">
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/lib/symphony-api-dal-4.9.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/../Poly-X30-Rest/lib/symphony-api-dal-4.9.1.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -31,7 +37,7 @@
     <orderEntry type="module-library">
       <library name="Maven: com.avispl.symphony.dal:symphony-dal-commons:4.9.1">
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/lib/symphony-dal-commons-4.9.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/../Poly-X30-Rest/lib/symphony-dal-commons-4.9.1.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -46,7 +52,7 @@
     <orderEntry type="module-library">
       <library name="Maven: org.icmp4j:icmp4j:1018">
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/lib/icmp4j-1018.jar!/" />
+          <root url="jar://$MODULE_DIR$/../Poly-X30-Rest/lib/icmp4j-1018.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
