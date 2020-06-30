@@ -89,7 +89,7 @@ public class EpsonProjector extends EpsonTcpSocketCommunicator implements Pingab
                 send("VOL " + value);
                 break;
             default:
-                throw new Exception("Could not find control property +" + cp.getProperty());
+                throw new Exception("Could not find control property: " + cp.getProperty());
         }
     }
 
@@ -105,8 +105,12 @@ public class EpsonProjector extends EpsonTcpSocketCommunicator implements Pingab
         ExtendedStatistics extStats = new ExtendedStatistics();
         Map<String,String> stats = new HashMap<>();
 
+        final String volume = send(queryVolume);
+        if (!volume.contains("ERR")) {
+            stats.put("volume",volume.replace("VOL=",""));
+        }
         stats.put("serialNumber",send(querySerial).replace("SNO=",""));
-        stats.put("volume",send(queryVolume).replace("VOL=",""));
+
         stats.put("epson.g7500.lampHours",send(queryLamp).replace("LAMP=",""));
 
         final String selectedInput = send(querySource);
@@ -155,9 +159,14 @@ public class EpsonProjector extends EpsonTcpSocketCommunicator implements Pingab
 
     public static void main(String[] args) throws Exception {
         EpsonProjector test = new EpsonProjector();
-        test.setHost("10.204.66.23");
+        test.setHost("192.168.0.77");
         test.init();
         ((ExtendedStatistics)test.getMultipleStatistics().get(0)).getStatistics().forEach((k,v)->System.out.println(k + " : " + v));
+
+//        ControllableProperty cp = new ControllableProperty();
+//        cp.setValue("0");
+//        cp.setProperty("power");
+//        test.controlProperty(cp);
 
     }
 }

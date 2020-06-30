@@ -76,7 +76,9 @@ public class EpsonTcpSocketCommunicator extends ShellCommunicator {
                     }
                 }
                 if (resp.startsWith("ESC/VP.net")){
-                    resp = resp.substring(16);
+                    if (resp.length() >= 16) {
+                        resp = resp.substring(16);
+                    }
                 }
                 return resp;
             } else {
