@@ -20,6 +20,7 @@
         <module>Epson-Projector</module>
         <module>Samsung-LCD</module>
         <module>Poly-X30</module>
+        <module>Poly-X30-Rest</module>
     </modules>
 
     <properties>
