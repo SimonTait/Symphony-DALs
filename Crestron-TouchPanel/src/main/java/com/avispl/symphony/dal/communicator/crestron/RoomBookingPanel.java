@@ -67,19 +67,79 @@ public class RoomBookingPanel extends CustomHttpCommunicator implements Monitora
         }
 
         final JsonNode jsonResponse = parseJson(devResponse.getResponseBody());
-        deviceStatistics.put("RoomState",jsonResponse.at("/Device/SchedulingPanel/Monitoring/RoomStatus/State").asText());
-        deviceStatistics.put("ConnectionStatusMessage",jsonResponse.at("/Device/SchedulingPanel/Monitoring/Scheduling/ConnectionStatusMessage").asText());
-        deviceStatistics.put("CalendarSyncStatus",jsonResponse.at("/Device/SchedulingPanel/Monitoring/Scheduling/CalendarSyncStatus").asText());
-        deviceStatistics.put("PanelSyncing",timeInThreshold(jsonResponse.at("/Device/SchedulingPanel/Monitoring/Scheduling/CalendarSyncStatus").asText().substring(20)));
-        deviceStatistics.put("ConnectionStatus",jsonResponse.at("/Device/SchedulingPanel/Monitoring/Scheduling/ConnectionStatus").asText());
-        deviceStatistics.put("ExchangeUsername",jsonResponse.at("/Device/SchedulingPanel/Config/Scheduling/Exchange/Username").asText());
+
+        if (jsonResponse.at("/Device/ThirdPartyApplications/Mode").asText().equals("OOTB")) { //If the panel is in room scheduling mode
+            deviceStatistics.put("DeviceMode","SchedulingPanel-"+jsonResponse.at("/Device/SchedulingPanel/Config/Scheduling/Source").asText());
+            deviceStatistics.put("ConnectionStatus",jsonResponse.at("/Device/SchedulingPanel/Monitoring/Scheduling/ConnectionStatus").asText());
+            if (!jsonResponse.at("/Device/SchedulingPanel/Monitoring/Scheduling/ConnectionStatus").asText().equals("Not Connected")) {
+                deviceStatistics.put("RoomState", jsonResponse.at("/Device/SchedulingPanel/Monitoring/RoomStatus/State").asText());
+                deviceStatistics.put("ConnectionStatusMessage", jsonResponse.at("/Device/SchedulingPanel/Monitoring/Scheduling/ConnectionStatusMessage").asText());
+                deviceStatistics.put("CalendarSyncStatus", jsonResponse.at("/Device/SchedulingPanel/Monitoring/Scheduling/CalendarSyncStatus").asText());
+                deviceStatistics.put("PanelSyncing", timeInThreshold(jsonResponse.at("/Device/SchedulingPanel/Monitoring/Scheduling/CalendarSyncStatus").asText("                    ").substring(20)));
+            }
+            if (jsonResponse.at("/Device/SchedulingPanel/Config/Scheduling/Source").asText().equals("Exchange")){
+                deviceStatistics.put("ConnectionStatus",jsonResponse.at("/Device/SchedulingPanel/Monitoring/Scheduling/ConnectionStatus").asText());
+                deviceStatistics.put("ExchangeUsername",jsonResponse.at("/Device/SchedulingPanel/Config/Scheduling/Exchange/Username").asText());
+            } else if (jsonResponse.at("/Device/SchedulingPanel/Config/Scheduling/Source").asText().equals("Google")){
+                deviceStatistics.put("GoogleCalendarName",jsonResponse.at("/Device/SchedulingPanel/Config/Scheduling/Google/GoogleCalendarName").asText());
+            } else if (jsonResponse.at("/Device/SchedulingPanel/Config/Scheduling/Source").asText().equals("R25")){
+                deviceStatistics.put("r25ServerUrl",jsonResponse.at("/Device/SchedulingPanel/Config/Scheduling/R25/ServerUrl").asText());
+                deviceStatistics.put("r25SpaceId",jsonResponse.at("/Device/SchedulingPanel/Config/Scheduling/R25/SpaceId").asText());
+            }
+        } else if (jsonResponse.at("/Device/ThirdPartyApplications/Mode").asText().equals("SkypeRoom")){
+            deviceStatistics.put("DeviceMode",jsonResponse.at("/Device/ThirdPartyApplications/Mode").asText());
+            deviceStatistics.put("PcConnectionAddress",jsonResponse.at("/Device/ThirdPartyApplications/SkypeRoom/SkypeRoomPcAddress").asText());
+            //Todo, Add statistics for skype rooms tps
+        } else if (jsonResponse.at("/Device/ThirdPartyApplications/Mode").asText().equals("Teams")){
+            deviceStatistics.put("DeviceMode",jsonResponse.at("/Device/ThirdPartyApplications/Mode").asText());
+            //todo add statistics for Teams rooms
+        } else if (jsonResponse.at("/Device/ThirdPartyApplications/Mode").asText().equals("Appspace")){
+            deviceStatistics.put("DeviceMode",jsonResponse.at("/Device/ThirdPartyApplications/Mode").asText());
+            //todo add stats for appspace.
+        } else {
+            deviceStatistics.put("DeviceMode",jsonResponse.at("/Device/ThirdPartyApplications/Mode").asText());
+            deviceStatistics.put("Error","Mode \""+jsonResponse.at("/Device/ThirdPartyApplications/Mode").asText() + "\" is currently unsupported by DAL");
+        }
+       /***** There are quite a few more project types*****
+        *"Mode": {
+        * "Appspace": "Appspace",
+        * "AskCody": "AskCody",
+        * "Aurora": "Aurora",
+        * "Avf": "Avf",
+        * "CrestronHome": "Crestron Home",
+        * "EMS": "EMS",
+        * "Gingco": "Gingco",
+        * "IndoorFinders": "Indoor Finders",
+        * "NewWave": "New Wave",
+        * "NfsRendezvous": "NFS Rendezvous",
+        * "OOTB": "Crestron Default",
+        * "Robin": "Robin Powered",
+        * "Scheduling": "Scheduling",
+        * "SharingCloud": "SharingCloud",
+        * "SkypeRoom": "Teams Video",
+        * "SpaceConnect": "Space Connect",
+        * "SpaceIQ": "SpaceIQ",
+        * "Teams": "Teams",
+        * "Teem": "Teem",
+        * "User": "User Project",
+        * "ZoomRoom": "Zoom Rooms",
+        * "ZoomRoomWithPageFlip": "Zoom Room With Page Flip"
+        * }
+        *
+        */
+
+       /****************************** Device Level Statistics *********************************************/
         deviceStatistics.put("PufVersion",jsonResponse.at("/Device/DeviceInfo/PufVersion").asText());
         deviceStatistics.put("MacAddress",jsonResponse.at("/Device/DeviceInfo/MacAddress").asText());
         deviceStatistics.put("SerialNumber",jsonResponse.at("/Device/DeviceInfo/SerialNumber").asText());
         deviceStatistics.put("DeviceName",jsonResponse.at("/Device/DeviceInfo/Name").asText());
         deviceStatistics.put("BuildDate",jsonResponse.at("/Device/DeviceInfo/BuildDate").asText());
-        deviceStatistics.put("RebootReason",jsonResponse.at("/Device/DeviceInfo/RebootReason").asText());
+        if (!jsonResponse.at("/Device/DeviceInfo/RebootReason").asText().isEmpty()){
+           deviceStatistics.put("RebootReason", jsonResponse.at("/Device/DeviceInfo/RebootReason").asText());
+       }
 
+
+        /***** Device Control Statistics *****/
         deviceStatistics.put("reboot","0");
         deviceControls.put("reboot", "push");
 
@@ -125,7 +185,7 @@ public class RoomBookingPanel extends CustomHttpCommunicator implements Monitora
 
     public static void main(String[] args) throws Exception {
         RoomBookingPanel device = new RoomBookingPanel();
-        device.setHost("10.152.66.33");
+        device.setHost("192.168.0.148");
         device.setLogin("admin");
         device.setPassword("19881988");
         device.init();

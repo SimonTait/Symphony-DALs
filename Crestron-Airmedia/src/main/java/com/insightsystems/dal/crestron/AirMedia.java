@@ -63,7 +63,7 @@ public class AirMedia extends AM300HttpCommunicator implements Monitorable, Ping
                 throw new NotAuthorizedException("Login failed, Username or password incorrect.");
             }
         }
-        System.out.println(devResponse.getFullResponse());
+        //System.out.println(devResponse.getFullResponse());
 
         JsonNode json = parseJson(devResponse.getResponseBody());
 
