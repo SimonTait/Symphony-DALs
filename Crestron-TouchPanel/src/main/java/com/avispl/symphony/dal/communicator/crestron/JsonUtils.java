@@ -6,7 +6,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import java.io.IOException;
 import java.util.Map;
 
-class JsonUtils {
+public class JsonUtils {
 
     static JsonNode parseJson(String jsonString) throws IOException {
         final ObjectMapper mapper = new ObjectMapper();

@@ -3,10 +3,12 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/APC-PDU/APC-PDU.iml" filepath="$PROJECT_DIR$/APC-PDU/APC-PDU.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Crestron- HD-MD4x2-4K-E/Crestron- HD-MD4x2-4K-E.iml" filepath="$PROJECT_DIR$/Crestron- HD-MD4x2-4K-E/Crestron- HD-MD4x2-4K-E.iml" />
       <module fileurl="file://$PROJECT_DIR$/Crestron-Airmedia/Crestron-Airmedia.iml" filepath="$PROJECT_DIR$/Crestron-Airmedia/Crestron-Airmedia.iml" />
       <module fileurl="file://$PROJECT_DIR$/Crestron-TouchPanel/Crestron-TouchPanel.iml" filepath="$PROJECT_DIR$/Crestron-TouchPanel/Crestron-TouchPanel.iml" />
       <module fileurl="file://$PROJECT_DIR$/Epson-Projector/Epson-Projector.iml" filepath="$PROJECT_DIR$/Epson-Projector/Epson-Projector.iml" />
       <module fileurl="file://$PROJECT_DIR$/Extron-SMP/Extron-SMP.iml" filepath="$PROJECT_DIR$/Extron-SMP/Extron-SMP.iml" />
+      <module fileurl="file://$PROJECT_DIR$/NEC-LCD/NEC-LCD.iml" filepath="$PROJECT_DIR$/NEC-LCD/NEC-LCD.iml" />
       <module fileurl="file://$PROJECT_DIR$/Poly-X30/Poly-X30.iml" filepath="$PROJECT_DIR$/Poly-X30/Poly-X30.iml" />
       <module fileurl="file://$PROJECT_DIR$/Samsung-LCD/Samsung-LCD.iml" filepath="$PROJECT_DIR$/Samsung-LCD/Samsung-LCD.iml" />
       <module fileurl="file://$PROJECT_DIR$/Serverlink-PDU/Serverlink-PDU.iml" filepath="$PROJECT_DIR$/Serverlink-PDU/Serverlink-PDU.iml" />
