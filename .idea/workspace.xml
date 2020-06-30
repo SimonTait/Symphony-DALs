@@ -26,19 +26,53 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="42f2a298-c3b8-4d31-9c15-2378b7e85f75" name="Default Changelist" comment="Add changelog + minor improvements">
-      <change beforePath="$PROJECT_DIR$/.idea/Symphony-DALs.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Symphony-DALs.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_6_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_9_10_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_9_10_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Crestron- HD-MD4x2-4K-E/Crestron- HD-MD4x2-4K-E.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Crestron- HD-MD4x2-4K-E/lib/icmp4j-1018.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Crestron- HD-MD4x2-4K-E/lib/symphony-api-commons-4.9.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Crestron- HD-MD4x2-4K-E/lib/symphony-api-dal-4.9.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Crestron- HD-MD4x2-4K-E/lib/symphony-dal-commons-4.9.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Crestron- HD-MD4x2-4K-E/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Crestron- HD-MD4x2-4K-E/src/main/java/com/insightsystems/dal/crestron/HDMD4x24KE.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Crestron- HD-MD4x2-4K-E/src/main/java/com/insightsystems/dal/crestron/HttpDevice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Crestron- HD-MD4x2-4K-E/src/main/resources/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NEC-LCD/NEC-LCD.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NEC-LCD/lib/icmp4j-1018.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NEC-LCD/lib/symphony-api-commons-4.9.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NEC-LCD/lib/symphony-api-dal-4.9.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NEC-LCD/lib/symphony-dal-commons-4.9.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NEC-LCD/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APC-PDU/APC-PDU.iml" beforeDir="false" afterPath="$PROJECT_DIR$/APC-PDU/APC-PDU.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Crestron-Airmedia/Crestron-Airmedia.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Crestron-Airmedia/Crestron-Airmedia.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Crestron-TouchPanel/Crestron-TouchPanel.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Crestron-TouchPanel/Crestron-TouchPanel.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Epson-Projector/Epson-Projector.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Epson-Projector/Epson-Projector.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Extron-SMP/Extron-SMP.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Extron-SMP/Extron-SMP.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Poly-X30/Poly-X30.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Poly-X30/Poly-X30.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Samsung-LCD/Samsung-LCD.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Samsung-LCD/Samsung-LCD.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Serverlink-PDU/Serverlink-PDU.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Serverlink-PDU/Serverlink-PDU.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iBoot-PDU/iBoot-PDU.iml" beforeDir="false" afterPath="$PROJECT_DIR$/iBoot-PDU/iBoot-PDU.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APC-PDU/target/APC-PDU-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/APC-PDU/target/APC-PDU-1.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APC-PDU/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/APC-PDU/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Crestron-Airmedia/target/Crestron-Airmedia-1.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Crestron-Airmedia/target/Crestron-Airmedia-1.1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Crestron-Airmedia/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Crestron-Airmedia/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Crestron-TouchPanel/Crestron-TouchPanel.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Crestron-TouchPanel/RoomBookingPanel.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Crestron-TouchPanel/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Crestron-TouchPanel/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Crestron-TouchPanel/src/main/java/com/avispl/symphony/dal/communicator/crestron/JsonUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/Crestron-TouchPanel/src/main/java/com/avispl/symphony/dal/communicator/crestron/JsonUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Crestron-TouchPanel/target/Crestron-TouchPanel-2.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Crestron-TouchPanel/target/classes/com/avispl/symphony/dal/communicator/crestron/JsonUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/Crestron-TouchPanel/target/classes/com/avispl/symphony/dal/communicator/crestron/JsonUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Crestron-TouchPanel/target/classes/com/avispl/symphony/dal/communicator/crestron/RoomBookingPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/Crestron-TouchPanel/target/classes/com/avispl/symphony/dal/communicator/crestron/RoomBookingPanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Crestron-TouchPanel/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Crestron-TouchPanel/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Epson-Projector/target/Epson-Projector-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Epson-Projector/target/Epson-Projector-1.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Epson-Projector/target/classes/com/insightsystems/dal/epson/EpsonProjector.class" beforeDir="false" afterPath="$PROJECT_DIR$/Epson-Projector/target/classes/com/insightsystems/dal/epson/EpsonProjector.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Epson-Projector/target/classes/com/insightsystems/dal/epson/EpsonTcpSocketCommunicator.class" beforeDir="false" afterPath="$PROJECT_DIR$/Epson-Projector/target/classes/com/insightsystems/dal/epson/EpsonTcpSocketCommunicator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Epson-Projector/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Epson-Projector/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Extron-SMP/target/Extron-SMP-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Extron-SMP/target/Extron-SMP-1.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Extron-SMP/target/classes/com/insightsystems/dal/extron/SMPRecorder$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/Extron-SMP/target/classes/com/insightsystems/dal/extron/SMPRecorder$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Extron-SMP/target/classes/com/insightsystems/dal/extron/SMPRecorder.class" beforeDir="false" afterPath="$PROJECT_DIR$/Extron-SMP/target/classes/com/insightsystems/dal/extron/SMPRecorder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Extron-SMP/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Extron-SMP/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Poly-X30/target/Poly-X30-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Poly-X30/target/Poly-X30-1.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Poly-X30/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Poly-X30/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Samsung-LCD/target/Samsung-LCD-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Samsung-LCD/target/Samsung-LCD-1.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Samsung-LCD/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Samsung-LCD/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Serverlink-PDU/target/Serverlink-PDU-1.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Serverlink-PDU/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Serverlink-PDU/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dal-simulator/devices.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dal-simulator/devices.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iBoot-PDU/target/iBoot-PDU-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/iBoot-PDU/target/iBoot-PDU-1.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iBoot-PDU/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/iBoot-PDU/target/maven-archiver/pom.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -84,7 +118,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="GitIgnore" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Crestron- HD-MD4x2-4K-E" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -93,20 +127,22 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.insightsystems.dal.crestron" />
       <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Work\Symphony-DALs\Crestron- HD-MD4x2-4K-E" />
+      <recent name="C:\Work\Symphony-DALs\HD-MD4x2-4K-E" />
+      <recent name="C:\Work\Symphony-DALs\NEC-LCD" />
       <recent name="C:\Work\Symphony-DALs\Serverlink-PDU\src\main" />
       <recent name="C:\Work\Symphony-DALs\Samsung-LCD\src\main" />
-      <recent name="C:\Work\Symphony-DALs\Poly-X30\src\main" />
-      <recent name="C:\Work\Symphony-DALs\iBoot-PDU\src\main" />
-      <recent name="C:\Work\Symphony-DALs\Extron-SMP\src\main" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Work\Symphony-DALs\Crestron-TouchPanel\src\main\java\com\avispl\symphony\dal\communicator\crestron" />
+      <recent name="C:\Work\Symphony-DALs\Crestron-TouchPanel\src\main\resources" />
+      <recent name="C:\Work\Symphony-DALs\Crestron-Airmedia\target" />
       <recent name="C:\Work\Symphony-DALs\" />
       <recent name="C:\Work\Symphony-DALs\Poly-X30\lib" />
-      <recent name="C:\Work\Symphony-DALs\src\main\resources" />
-      <recent name="C:\Work\Symphony-DALs\Extron-SMP\src\main\java" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -114,13 +150,39 @@
       <command value="mvn package" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.All in iBoot-PDU">
+  <component name="RunManager" selected="Application.HDMD4x24KE (1)">
     <configuration name="EpsonProjector" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.insightsystems.dal.epson.EpsonProjector" />
       <module name="Epson-Projector" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.insightsystems.dal.epson.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HDMD4x24KE (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.insightsystems.dal.crestron.HDMD4x24KE" />
+      <module name="Crestron- HD-MD4x2-4K-E" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.insightsystems.dal.crestron.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HDMD4x24KE" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.insightsystems.dal.com.insightsystems.dal.HDMD4x24KE" />
+      <module name="Crestron- HD-MD4x2-4K-E" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.insightsystems.dal.com.insightsystems.dal.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -141,32 +203,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SLPSB1008H" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.insightsystems.dal.serverlink.SLPSB1008H" />
-      <module name="Serverlink-PDU" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.insightsystems.dal.serverlink.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SMPRecorder" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.insightsystems.dal.extron.SMPRecorder" />
-      <module name="Extron-SMP" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.insightsystems.dal.extron.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="All in iBoot-PDU" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="iBoot-PDU" />
       <option name="PACKAGE_NAME" value="" />
@@ -177,11 +213,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.HDMD4x24KE (1)" />
+        <item itemvalue="Application.HDMD4x24KE" />
         <item itemvalue="JUnit.All in iBoot-PDU" />
         <item itemvalue="Application.EpsonProjector" />
         <item itemvalue="Application.RoomBookingPanel" />
-        <item itemvalue="Application.SMPRecorder" />
-        <item itemvalue="Application.SLPSB1008H" />
       </list>
     </recent_temporary>
   </component>
@@ -217,7 +253,14 @@
       <option name="project" value="LOCAL" />
       <updated>1592891592911</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Update fasterxml libraries">
+      <created>1592892454813</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1592892454813</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -237,53 +280,58 @@
     <MESSAGE value="Add dal-simulator to project" />
     <MESSAGE value="Add changelog + minor improvements" />
     <MESSAGE value="Initial Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial Commit" />
+    <MESSAGE value="Update fasterxml libraries" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update fasterxml libraries" />
   </component>
   <component name="WindowStateProjectService">
     <state x="586" y="198" key="#Inspections" timestamp="1592539265736">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="586" y="198" key="#Inspections/0.0.1920.1040@0.0.1920.1040" timestamp="1592539265736" />
-    <state x="440" y="94" key="#Project_Structure" timestamp="1592890177700">
+    <state x="440" y="94" key="#Project_Structure" timestamp="1593484224523">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="440" y="94" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1592890177700" />
-    <state x="765" y="226" key="#com.intellij.ide.util.MemberChooser" timestamp="1592788497283">
+    <state x="440" y="94" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1593484224523" />
+    <state x="765" y="226" key="#com.intellij.ide.util.MemberChooser" timestamp="1593494305051">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="226" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1592788497283" />
-    <state x="615" y="444" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1592886620378">
+    <state x="765" y="226" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1593494305051" />
+    <state x="615" y="444" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1593484355553">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="615" y="444" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1592886620378" />
-    <state x="728" y="401" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1592886626309">
+    <state x="615" y="444" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1593484355553" />
+    <state x="699" y="389" width="521" height="268" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1593493304673">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="728" y="401" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1920.1040@0.0.1920.1040" timestamp="1592886626309" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1592890635258">
+    <state x="699" y="389" width="521" height="268" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1593493304673" />
+    <state x="728" y="401" width="654" height="237" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1593484361427">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1592890635258" />
+    <state x="728" y="401" width="654" height="237" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1920.1040@0.0.1920.1040" timestamp="1593484361427" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1592894779353">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1592894779353" />
     <state x="821" y="418" key="Github.ShareDialog" timestamp="1592891987946">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="821" y="418" key="Github.ShareDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1592891987946" />
-    <state width="1877" height="278" key="GridCell.Tab.0.bottom" timestamp="1592891448263">
+    <state width="1877" height="278" key="GridCell.Tab.0.bottom" timestamp="1593500344289">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="278" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1592891448263" />
-    <state width="1877" height="278" key="GridCell.Tab.0.center" timestamp="1592891448263">
+    <state width="1877" height="278" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1593500344289" />
+    <state width="1877" height="278" key="GridCell.Tab.0.center" timestamp="1593500344289">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="278" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1592891448263" />
-    <state width="1877" height="278" key="GridCell.Tab.0.left" timestamp="1592891448263">
+    <state width="1877" height="278" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1593500344289" />
+    <state width="1877" height="278" key="GridCell.Tab.0.left" timestamp="1593500344289">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="278" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1592891448263" />
-    <state width="1877" height="278" key="GridCell.Tab.0.right" timestamp="1592891448263">
+    <state width="1877" height="278" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1593500344289" />
+    <state width="1877" height="278" key="GridCell.Tab.0.right" timestamp="1593500344289">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="278" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1592891448263" />
+    <state width="1877" height="278" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1593500344289" />
     <state x="490" y="175" key="Maven.ArtifactSearchDialog" timestamp="1592451677445">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -292,6 +340,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1592890267781" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1592892485457">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1592892485457" />
     <state x="1062" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1592807191902">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -304,9 +356,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1096" y="244" width="672" height="677" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1592889172483" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1592788604582">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1593496628460">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1592788604582" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1593496628460" />
   </component>
 </project>

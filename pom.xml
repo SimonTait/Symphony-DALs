@@ -15,11 +15,12 @@
         <module>Serverlink-PDU</module>
         <module>APC-PDU</module>
         <module>iBoot-PDU</module>
-        <module>Crestron-TouchPanel</module>
         <module>Crestron-Airmedia</module>
         <module>Epson-Projector</module>
         <module>Samsung-LCD</module>
         <module>Poly-X30</module>
+        <module>NEC-LCD</module>
+        <module>HD-MD4x2-4K-E</module>
     </modules>
 
     <properties>

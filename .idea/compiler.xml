@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="Serverlink-PDU" />
         <module name="APC-PDU" />
+        <module name="NEC-LCD" />
         <module name="Samsung-LCD" />
         <module name="Extron-SMP" />
         <module name="Poly-X30" />
@@ -15,15 +16,18 @@
         <module name="Crestron-Airmedia" />
         <module name="Crestron-TouchPanel" />
         <module name="Epson-Projector" />
+        <module name="Crestron- HD-MD4x2-4K-E" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="APC-PDU" target="8" />
+      <module name="Crestron- HD-MD4x2-4K-E" target="8" />
       <module name="Crestron-Airmedia" target="8" />
       <module name="Crestron-TouchPanel" target="8" />
       <module name="Epson-Projector" target="8" />
       <module name="Extron-SMP" target="8" />
       <module name="iBoot-PDU" target="7" />
+      <module name="NEC-LCD" target="8" />
       <module name="Poly-X30" target="8" />
       <module name="Samsung-LCD" target="8" />
       <module name="Serverlink-PDU" target="8" />

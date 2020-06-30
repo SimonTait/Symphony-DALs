@@ -7,7 +7,7 @@
             <property name="login">admin</property>
             <property name="password">19881988</property>
         </properties>
-    </device>-->
+    </device>
     <device>
         <jar>C:\Work\Symphony-DALs\Serverlink-PDU\target\Serverlink-PDU-1.1.jar</jar>
         <deviceClassName>com.insightsystems.dal.serverlink.SLPSB1008H</deviceClassName>
@@ -15,5 +15,50 @@
             <property name="host">10.164.69.10</property>
         </properties>
     </device>
-
+	<device>
+        <jar>C:\Work\DAL-Test\target\RoomBookingPanel-1.0-SNAPSHOT.jar</jar>
+        <deviceClassName>com.avispl.symphony.dal.communicator.crestron.RoomBookingPanel</deviceClassName>
+        <properties>
+            <property name="host">10.152.66.33</property>
+            <property name="login">admin</property>
+            <property name="password">19881988</property>
+        </properties>
+    </device>
+	<device>
+        <jar>C:\Work\Symphony-DALs\Poly-X30\target\Poly-X30-1.0.jar</jar>
+        <deviceClassName>com.insightsystems.dal.poly.x30</deviceClassName>
+        <properties>
+            <property name="host">10.152.66.33</property>
+            <property name="login">admin</property>
+            <property name="password">19881988</property>
+        </properties>
+    </device>
+	<device>
+        <jar>C:\Work\Symphony-DALs\Crestron-Airmedia\target\Crestron-Airmedia-1.1.jar</jar>
+        <deviceClassName>com.insightsystems.dal.crestron.AirMedia</deviceClassName>
+        <properties>
+            <property name="host">10.152.66.33</property>
+            <property name="login">admin</property>
+            <property name="password">19881988</property>
+        </properties>
+    </device>
+	<device>
+        <jar>C:\Work\Symphony-DALs\Epson-Projector\target\Epson-Projector-1.0.jar</jar>
+        <deviceClassName>com.insightsystems.dal.epson.EpsonProjector</deviceClassName>
+        <properties>
+            <property name="host">10.152.66.33</property>
+            <property name="login">admin</property>
+            <property name="password">19881988</property>
+        </properties>
+    </device>-->
+	
+		<device>
+        <jar>C:\Work\Symphony-DALs\Extron-SMP\target\Extron-SMP-1.0.jar</jar>
+        <deviceClassName>com.insightsystems.dal.extron.SMPRecorder</deviceClassName>
+        <properties>
+            <property name="host">10.152.66.33</property>
+            <property name="login">admin</property>
+            <property name="password">19881988</property>
+        </properties>
+    </device>
 </devices>
