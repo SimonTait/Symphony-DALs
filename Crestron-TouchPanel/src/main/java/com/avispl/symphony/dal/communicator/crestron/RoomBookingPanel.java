@@ -34,7 +34,7 @@ import static java.util.Collections.singletonList;
 public class RoomBookingPanel extends CustomHttpCommunicator implements Monitorable, Pingable, Controller {
 
     public RoomBookingPanel(){
-        //BasicConfigurator.configure();
+
     }
 
     private void authenticate(){

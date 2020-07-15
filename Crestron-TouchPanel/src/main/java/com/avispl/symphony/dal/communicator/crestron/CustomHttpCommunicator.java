@@ -91,7 +91,7 @@ public class CustomHttpCommunicator extends BaseDevice implements Communicator {
             }
         });
         SSLContext sslContext = sslContextBuilder.build();
-        httpClientBuilder.setSSLContext(sslContext);
+        httpClientBuilder.setSslcontext(sslContext);
         HostnameVerifier hostNameVerifier = new HostnameVerifier() {
             public boolean verify(String s, SSLSession sslSession) {
                 return true;
