@@ -1,7 +1,7 @@
 <devices>
-    <!--<device>
-        <jar>C:\Work\Symphony-DALs\Crestron-TouchPanel\target\Crestron-TouchPanel-2.0.jar</jar>
-        <deviceClassName>RoomBookingPanel</deviceClassName>
+   <!-- <device>
+        <jar>C:\Work\Symphony-DALs\Crestron-TouchPanel\target\RoomBookingPanel-2.0.jar</jar>
+        <deviceClassName>com.avispl.symphony.dal.communicator.crestron.RoomBookingPanel</deviceClassName>
         <properties>
             <property name="host">10.152.66.33</property>
             <property name="login">admin</property>
@@ -23,7 +23,7 @@
             <property name="login">admin</property>
             <property name="password">19881988</property>
         </properties>
-    </device>
+    </device>  
 	<device>
         <jar>C:\Work\Symphony-DALs\Poly-X30\target\Poly-X30-1.0.jar</jar>
         <deviceClassName>com.insightsystems.dal.poly.x30</deviceClassName>
@@ -50,7 +50,7 @@
             <property name="login">admin</property>
             <property name="password">19881988</property>
         </properties>
-    </device>-->
+    </device>
 	
 		<device>
         <jar>C:\Work\Symphony-DALs\Extron-SMP\target\Extron-SMP-1.0.jar</jar>
@@ -59,6 +59,15 @@
             <property name="host">10.152.66.33</property>
             <property name="login">admin</property>
             <property name="password">19881988</property>
-        </properties>
+        </properties> 
+    </device>-->
+	<device>
+        <jar>C:\Work\Symphony-DALs\Crestron- DM_MD8x8\target\DMFrame-1.0.jar</jar>
+        <deviceClassName>com.insightsystems.dal.crestron.DMFrame</deviceClassName>
+        <properties>
+            <property name="host">10.193.77.175</property>
+			<property name="port">41795</property>
+        </properties> 
     </device>
+	
 </devices>
