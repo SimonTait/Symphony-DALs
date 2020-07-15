@@ -26,38 +26,66 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="42f2a298-c3b8-4d31-9c15-2378b7e85f75" name="Default Changelist" comment="Add changelog + minor improvements">
-      <change beforePath="$PROJECT_DIR$/.idea/Symphony-DALs.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_9_10.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_9_9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_9_10_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_jcraft_jsch_0_1_52.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_net_commons_net_3_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_14.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_java_dev_jna_jna_4_5_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_java_dev_jna_jna_platform_4_5_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_snmp4j_snmp4j_2_5_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_4_2_4_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_4_2_4_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_4_2_4_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_4_2_4_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_4_2_4_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_4_2_4_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_4_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CAV Aggregator/CAV Aggregator.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CAV Aggregator/lib/icmp4j-1018.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CAV Aggregator/lib/symphony-api-commons-4.9.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CAV Aggregator/lib/symphony-api-dal-4.9.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CAV Aggregator/lib/symphony-dal-commons-4.9.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CAV Aggregator/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CAV Aggregator/src/main/java/com/insightsystems/dal/CAVAggregator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CAV Aggregator/src/main/resources/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Crestron- DM_MD8x8/Crestron- DM_MD8x8.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Crestron- DM_MD8x8/lib/icmp4j-1018.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Crestron- DM_MD8x8/lib/symphony-api-commons-4.9.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Crestron- DM_MD8x8/lib/symphony-api-dal-4.9.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Crestron- DM_MD8x8/lib/symphony-dal-commons-4.9.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Crestron- DM_MD8x8/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Crestron- DM_MD8x8/src/main/java/com/insightsystems/dal/crestron/DMFrame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Crestron- DM_MD8x8/src/main/resources/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ENC-300/ENC-300.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ENC-300/lib/icmp4j-1018.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ENC-300/lib/symphony-api-commons-4.9.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ENC-300/lib/symphony-api-dal-4.9.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ENC-300/lib/symphony-dal-commons-4.9.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ENC-300/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ENC-300/src/main/java/com/insightsystems/dal/teracue/enc300.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ENC-300/src/main/resources/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NEC-LCD/src/main/java/com/insightsystems/dal/nec/LCD.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NEC-LCD/src/main/java/com/insightsystems/dal/nec/LCDSNMP.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NEC-LCD/src/main/java/com/insightsystems/dal/nec/TcpSocketCommunicator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NEC-LCD/src/main/resources/log4j.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APC-PDU/APC-PDU.iml" beforeDir="false" afterPath="$PROJECT_DIR$/APC-PDU/APC-PDU.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Crestron- HD-MD4x2-4K-E/src/main/java/com/insightsystems/dal/crestron/HDMD4x24KE.java" beforeDir="false" afterPath="$PROJECT_DIR$/Crestron- HD-MD4x2-4K-E/src/main/java/com/insightsystems/dal/crestron/HDMD4x24KE.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Crestron-Airmedia/Crestron-Airmedia.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Crestron-Airmedia/Crestron-Airmedia.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Crestron-Airmedia/target/classes/com/insightsystems/dal/crestron/AirMedia.class" beforeDir="false" afterPath="$PROJECT_DIR$/Crestron-Airmedia/target/classes/com/insightsystems/dal/crestron/AirMedia.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Crestron-TouchPanel/RoomBookingPanel.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Crestron-TouchPanel/RoomBookingPanel.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Crestron-TouchPanel/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Crestron-TouchPanel/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Crestron-TouchPanel/src/main/java/com/avispl/symphony/dal/communicator/crestron/CustomHttpCommunicator.java" beforeDir="false" afterPath="$PROJECT_DIR$/Crestron-TouchPanel/src/main/java/com/avispl/symphony/dal/communicator/crestron/CustomHttpCommunicator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Crestron-TouchPanel/src/main/java/com/avispl/symphony/dal/communicator/crestron/RoomBookingPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/Crestron-TouchPanel/src/main/java/com/avispl/symphony/dal/communicator/crestron/RoomBookingPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Crestron-TouchPanel/target/classes/com/avispl/symphony/dal/communicator/crestron/CustomHttpCommunicator.class" beforeDir="false" afterPath="$PROJECT_DIR$/Crestron-TouchPanel/target/classes/com/avispl/symphony/dal/communicator/crestron/CustomHttpCommunicator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Crestron-TouchPanel/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Crestron-TouchPanel/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DALs.iml" beforeDir="false" afterPath="$PROJECT_DIR$/DALs.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Epson-Projector/Epson-Projector.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Epson-Projector/Epson-Projector.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Epson-Projector/src/main/java/com/insightsystems/dal/epson/EpsonProjector.java" beforeDir="false" afterPath="$PROJECT_DIR$/Epson-Projector/src/main/java/com/insightsystems/dal/epson/EpsonProjector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Epson-Projector/target/classes/com/insightsystems/dal/epson/EpsonProjector.class" beforeDir="false" afterPath="$PROJECT_DIR$/Epson-Projector/target/classes/com/insightsystems/dal/epson/EpsonProjector.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Extron-SMP/Extron-SMP.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Extron-SMP/Extron-SMP.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NEC-LCD/NEC-LCD.iml" beforeDir="false" afterPath="$PROJECT_DIR$/NEC-LCD/NEC-LCD.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Poly-X30-Rest/Poly-X30 (1).iml" beforeDir="false" afterPath="$PROJECT_DIR$/Poly-X30-Rest/Poly-X30 (1).iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Poly-X30/Poly-X30.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Poly-X30/Poly-X30.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Samsung-LCD/Samsung-LCD.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Samsung-LCD/Samsung-LCD.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Samsung-LCD/target/classes/com/insightsystems/dal/samsung/LCD.class" beforeDir="false" afterPath="$PROJECT_DIR$/Samsung-LCD/target/classes/com/insightsystems/dal/samsung/LCD.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Serverlink-PDU/Serverlink-PDU.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Serverlink-PDU/Serverlink-PDU.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Serverlink-PDU/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Serverlink-PDU/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Serverlink-PDU/src/main/java/com/insightsystems/dal/serverlink/SLPSB1008H.java" beforeDir="false" afterPath="$PROJECT_DIR$/Serverlink-PDU/src/main/java/com/insightsystems/dal/serverlink/SLPSB1008H.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Serverlink-PDU/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Serverlink-PDU/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dal-simulator/devices.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dal-simulator/devices.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iBoot-PDU/iBoot-PDU.iml" beforeDir="false" afterPath="$PROJECT_DIR$/iBoot-PDU/iBoot-PDU.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +130,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="GitIgnore" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Poly-X30-Rest" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Crestron- HD-MD4x2-4K-E" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -110,24 +138,23 @@
     <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.importing" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Work\Symphony-DALs\" />
-      <recent name="C:\Work\Symphony-DALs\Poly-X30\lib" />
-      <recent name="C:\Work\Symphony-DALs\src\main\resources" />
-      <recent name="C:\Work\Symphony-DALs\Extron-SMP\src\main\java" />
-    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.insightsystems.dal.crestron" />
       <recent name="" />
     </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.insightsystems.dal.samsung" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Programming\Git\Symphony-DALs" />
+      <recent name="C:\Work\Symphony-DALs\Crestron- HD-MD4x2-4K-E" />
+      <recent name="C:\Work\Symphony-DALs\HD-MD4x2-4K-E" />
+      <recent name="C:\Work\Symphony-DALs\NEC-LCD" />
       <recent name="C:\Work\Symphony-DALs\Serverlink-PDU\src\main" />
       <recent name="C:\Work\Symphony-DALs\Samsung-LCD\src\main" />
-      <recent name="C:\Work\Symphony-DALs\Poly-X30\src\main" />
-      <recent name="C:\Work\Symphony-DALs\iBoot-PDU\src\main" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Work\Symphony-DALs\Crestron-TouchPanel\src\main\java\com\avispl\symphony\dal\communicator\crestron" />
+      <recent name="C:\Work\Symphony-DALs\Crestron-TouchPanel\src\main\resources" />
+      <recent name="C:\Work\Symphony-DALs\Crestron-Airmedia\target" />
+      <recent name="C:\Work\Symphony-DALs\" />
+      <recent name="C:\Work\Symphony-DALs\Poly-X30\lib" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -135,20 +162,7 @@
       <command value="mvn package" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.LCD">
-    <configuration name="AirMedia" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.insightsystems.dal.crestron.AirMedia" />
-      <module name="Crestron-Airmedia" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.insightsystems.dal.crestron.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.HDMD4x24KE (1)">
     <configuration name="EpsonProjector" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.insightsystems.dal.epson.EpsonProjector" />
       <module name="Epson-Projector" />
@@ -162,12 +176,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LCD" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.insightsystems.dal.samsung.LCD" />
-      <module name="Samsung-LCD" />
+    <configuration name="HDMD4x24KE (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.insightsystems.dal.crestron.HDMD4x24KE" />
+      <module name="Crestron- HD-MD4x2-4K-E" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.insightsystems.dal.samsung.*" />
+          <option name="PATTERN" value="com.insightsystems.dal.crestron.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HDMD4x24KE" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.insightsystems.dal.com.insightsystems.dal.HDMD4x24KE" />
+      <module name="Crestron- HD-MD4x2-4K-E" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.insightsystems.dal.com.insightsystems.dal.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -188,26 +215,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="x30 (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.insightsystems.dal.poly.x30" />
-      <module name="Poly-X30 (1)" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.insightsystems.dal.poly.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+    <configuration name="All in iBoot-PDU" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="iBoot-PDU" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.LCD" />
-        <item itemvalue="Application.AirMedia" />
-        <item itemvalue="Application.RoomBookingPanel" />
-        <item itemvalue="Application.x30 (1)" />
+        <item itemvalue="Application.HDMD4x24KE (1)" />
+        <item itemvalue="Application.HDMD4x24KE" />
+        <item itemvalue="JUnit.All in iBoot-PDU" />
         <item itemvalue="Application.EpsonProjector" />
+        <item itemvalue="Application.RoomBookingPanel" />
       </list>
     </recent_temporary>
   </component>
@@ -243,7 +265,14 @@
       <option name="project" value="LOCAL" />
       <updated>1592891592911</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Update fasterxml libraries">
+      <created>1592892454813</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1592892454813</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -263,53 +292,58 @@
     <MESSAGE value="Add dal-simulator to project" />
     <MESSAGE value="Add changelog + minor improvements" />
     <MESSAGE value="Initial Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial Commit" />
+    <MESSAGE value="Update fasterxml libraries" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update fasterxml libraries" />
   </component>
   <component name="WindowStateProjectService">
     <state x="586" y="198" key="#Inspections" timestamp="1592539265736">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="586" y="198" key="#Inspections/0.0.1920.1040@0.0.1920.1040" timestamp="1592539265736" />
-    <state x="440" y="94" key="#Project_Structure" timestamp="1592890177700">
+    <state x="440" y="94" key="#Project_Structure" timestamp="1593484224523">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="440" y="94" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1592890177700" />
-    <state x="765" y="226" key="#com.intellij.ide.util.MemberChooser" timestamp="1592788497283">
+    <state x="440" y="94" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1593484224523" />
+    <state x="765" y="226" key="#com.intellij.ide.util.MemberChooser" timestamp="1593494305051">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="226" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1592788497283" />
-    <state x="615" y="444" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1592886620378">
+    <state x="765" y="226" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1593494305051" />
+    <state x="615" y="444" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1593484355553">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="615" y="444" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1592886620378" />
-    <state x="728" y="401" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1592886626309">
+    <state x="615" y="444" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1593484355553" />
+    <state x="699" y="389" width="521" height="268" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1593493304673">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="728" y="401" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1920.1040@0.0.1920.1040" timestamp="1592886626309" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1592890635258">
+    <state x="699" y="389" width="521" height="268" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1593493304673" />
+    <state x="728" y="401" width="654" height="237" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1593484361427">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1592890635258" />
+    <state x="728" y="401" width="654" height="237" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1920.1040@0.0.1920.1040" timestamp="1593484361427" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1592894779353">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1592894779353" />
     <state x="821" y="418" key="Github.ShareDialog" timestamp="1592891987946">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="821" y="418" key="Github.ShareDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1592891987946" />
-    <state width="1877" height="278" key="GridCell.Tab.0.bottom" timestamp="1592891448263">
+    <state width="1877" height="304" key="GridCell.Tab.0.bottom" timestamp="1594789355830">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="278" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1592891448263" />
-    <state width="1877" height="278" key="GridCell.Tab.0.center" timestamp="1592891448263">
+    <state width="1877" height="304" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1594789355830" />
+    <state width="1877" height="304" key="GridCell.Tab.0.center" timestamp="1594789355829">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="278" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1592891448263" />
-    <state width="1877" height="278" key="GridCell.Tab.0.left" timestamp="1592891448263">
+    <state width="1877" height="304" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1594789355829" />
+    <state width="1877" height="304" key="GridCell.Tab.0.left" timestamp="1594789355829">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="278" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1592891448263" />
-    <state width="1877" height="278" key="GridCell.Tab.0.right" timestamp="1592891448263">
+    <state width="1877" height="304" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1594789355829" />
+    <state width="1877" height="304" key="GridCell.Tab.0.right" timestamp="1594789355829">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="278" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1592891448263" />
+    <state width="1877" height="304" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1594789355829" />
     <state x="490" y="175" key="Maven.ArtifactSearchDialog" timestamp="1592451677445">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -318,6 +352,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1592890267781" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1592892485457">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1592892485457" />
     <state x="1062" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1592807191902">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -330,9 +368,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1096" y="244" width="672" height="677" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1592889172483" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1592788604582">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1593496628460">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1592788604582" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1593496628460" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Symphony_DALs$LCD.ic" NAME="LCD Coverage Results" MODIFIED="1593580025316" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.insightsystems.dal.nec.*</FILTER>
+    </SUITE>
   </component>
 </project>

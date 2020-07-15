@@ -6,29 +6,46 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Serverlink-PDU" />
-        <module name="APC-PDU" />
-        <module name="NEC-LCD" />
-        <module name="Samsung-LCD" />
-        <module name="Extron-SMP" />
-        <module name="Poly-X30" />
-        <module name="iBoot-PDU" />
-        <module name="Crestron-Airmedia" />
         <module name="Crestron-TouchPanel" />
+        <module name="iBoot-PDU" />
         <module name="Epson-Projector" />
+        <module name="RoomBookingPanel" />
+        <module name="Crestron- DM_MD8x8" />
         <module name="Crestron- HD-MD4x2-4K-E" />
+        <module name="CAV Aggregator" />
+        <module name="ENC-300" />
+        <module name="APC-PDU" />
+        <module name="Extron-SMP" />
+        <module name="Samsung-LCD" />
+        <module name="Poly-X30" />
+        <module name="Serverlink-PDU" />
+        <module name="Crestron-Airmedia" />
+        <module name="NEC-LCD" />
+      </profile>
+      <profile name="Annotation profile for Insight DAL Parent Project" enabled="true">
+        <sourceOutputDir name="../Poly-X30/target/generated-sources/annotations" />
+        <sourceTestOutputDir name="../Poly-X30/target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="Poly-X30 (1)" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="APC-PDU" target="8" />
+      <module name="CAV Aggregator" target="8" />
+      <module name="Crestron- DM_MD8x8" target="8" />
       <module name="Crestron- HD-MD4x2-4K-E" target="8" />
       <module name="Crestron-Airmedia" target="8" />
       <module name="Crestron-TouchPanel" target="8" />
+      <module name="DALs" target="8" />
+      <module name="ENC-300" target="8" />
       <module name="Epson-Projector" target="8" />
       <module name="Extron-SMP" target="8" />
       <module name="iBoot-PDU" target="7" />
       <module name="NEC-LCD" target="8" />
+      <module name="NEC-LCD-SNMP" target="8" />
       <module name="Poly-X30" target="8" />
+      <module name="Poly-X30 (1)" target="8" />
+      <module name="RoomBookingPanel" target="8" />
       <module name="Samsung-LCD" target="8" />
       <module name="Serverlink-PDU" target="8" />
       <module name="Symphony-DALs" target="8" />

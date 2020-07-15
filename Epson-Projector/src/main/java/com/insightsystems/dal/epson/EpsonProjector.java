@@ -15,10 +15,13 @@ public class EpsonProjector extends EpsonTcpSocketCommunicator implements Pingab
     private static final String[] errorCodes = {"00","01","03","04","06","07","08","09","0A","0B","0C","0D","0E","0F","10","11","12","13","14","15","16","17","18"};
     private static final String[] errorMessages = {"None","Fan Error","Lamp Failure at Power On","High Internal Temperature Error","Lamp Error","Open Lamp Cover Door Error","Cinema Filter Error","Electric Dual-Layered Capacitor is Disconnected","Auto Iris Error","Subsystem Error","Low Air Flow Error","Air Filter Air Flow Sensor Error","Power Supply Unit Error","Shutter Error","Cooling System Error (Peltiert Element)","Cooling System Error (Pump)","Static Iris Error","Power Supply Unit Error (Disagreement of Ballast)","Exhaust Shutter Error","Obstacle Detection Error","IF Board Discernment Error","Communication Error \"Stack Projection Function\"","IC2 Error"};
     private final String queryError = "ERR?",queryPower = "PWR?",queryLamp = "LAMP?", querySource = "SOURCE?",queryVolume = "VOL?", queryAVMute = "MUTE?",querySerial="SNO?",querySignal="SIGNAL?";
+    private final String queryAspect = "ASPECT?",queryAutoSearch = "AUTOSEARCH?", queryFreeze = "FREEZE?",queryOntime = "ONTIME?";
     private final String[][] powerEnum = {{"00","Standby Mode (Network OFF)","0"},{"01","Lamp ON","1"},{"02","Warmup","1"},{"03","Cooldown","0"},{"04","Standby Mode (Network ON)","0"},{"05","Abnormality Standby","0"},{"09","A/V Standby","0"}};
     private final String[][] signalEnum = {{"00","No Signal"},{"01","Signal Detected"},{"FF","Unsupported Signal"}};
     private final String[] sourceEnum = {"11","B1","B4","41","42","30","52","53","80","A0"};
     private final String[] sourceFriendlyEnum = {"Computer 1 VGA", "Computer 2 BNC","Component","Video 1","S-Video","HDMI","USB","LAN","HDbaseT","DVI"};
+    private final String[] aspectEnum = {"00","20","30","40","50","60","A0"};
+    private final String[] aspectEnumFriendly = {"Normal","16:9","Auto","Full","H Zoom","Native","V Zoom"};
 
     private final List<AdvancedControllableProperty> controls = new ArrayList<>();
 
@@ -89,7 +92,7 @@ public class EpsonProjector extends EpsonTcpSocketCommunicator implements Pingab
                 send("VOL " + value);
                 break;
             default:
-                throw new Exception("Could not find control property: " + cp.getProperty());
+                throw new Exception("Could not find control property +" + cp.getProperty());
         }
     }
 
@@ -105,12 +108,8 @@ public class EpsonProjector extends EpsonTcpSocketCommunicator implements Pingab
         ExtendedStatistics extStats = new ExtendedStatistics();
         Map<String,String> stats = new HashMap<>();
 
-        final String volume = send(queryVolume);
-        if (!volume.contains("ERR")) {
-            stats.put("volume",volume.replace("VOL=",""));
-        }
         stats.put("serialNumber",send(querySerial).replace("SNO=",""));
-
+        stats.put("volume",send(queryVolume).replace("VOL=",""));
         stats.put("epson.g7500.lampHours",send(queryLamp).replace("LAMP=",""));
 
         final String selectedInput = send(querySource);
@@ -146,11 +145,36 @@ public class EpsonProjector extends EpsonTcpSocketCommunicator implements Pingab
             }
         }
 
+        String autoSearch = send(queryAutoSearch);
+        if (!autoSearch.contains("ERR")) {
+            autoSearch = autoSearch.substring(7,9);
+            for (int i = 0; i < aspectEnum.length; i++) {
+                if (selectedInput.contains(aspectEnum[i])) {
+                    stats.put("aspect", aspectEnumFriendly[i]);
+                    break;
+                }
+            }
+        }
+
         final String muteState = send(queryAVMute);
-        if (muteState.contains("ON"))
-            stats.put("pictureMute","true");
-        else if (muteState.contains("OFF"))
-            stats.put("pictureMute","false");
+        if (!muteState.contains("ERR")) {
+            stats.put("pictureMute",muteState.contains("ON") ? "1":"0");
+        }
+
+        final String freeze = send(queryFreeze);
+        if (!freeze.contains("ERR")) {
+            stats.put("freeze", freeze.contains("ON") ? "1":"0");
+        }
+
+        final String aspect = send(queryAspect);
+        if (!aspect.contains("ERR")) {
+            stats.put("aspect", send(queryAspect));
+        }
+
+        final String ontime = send(queryOntime);
+        if (!ontime.contains("ERR")) {
+            stats.put("ontime", ontime.replace("ONTIME=",""));
+        }
 
         extStats.setControllableProperties(controls);
         extStats.setStatistics(stats);
@@ -159,14 +183,25 @@ public class EpsonProjector extends EpsonTcpSocketCommunicator implements Pingab
 
     public static void main(String[] args) throws Exception {
         EpsonProjector test = new EpsonProjector();
-        test.setHost("192.168.0.77");
+<<<<<<< Updated upstream
+        test.setHost("10.204.66.23");
         test.init();
         ((ExtendedStatistics)test.getMultipleStatistics().get(0)).getStatistics().forEach((k,v)->System.out.println(k + " : " + v));
 
-//        ControllableProperty cp = new ControllableProperty();
-//        cp.setValue("0");
-//        cp.setProperty("power");
-//        test.controlProperty(cp);
+=======
+        test.setHost("10.152.73.28");
+        test.init();
+        ((ExtendedStatistics)test.getMultipleStatistics().get(0)).getStatistics().forEach((k,v)->System.out.println(k + " : " + v));
 
+        ControllableProperty cp = new ControllableProperty();
+        cp.setValue("1");
+        cp.setProperty("power");
+        test.controlProperty(cp);
+
+        Thread.sleep(30000L);
+        ((ExtendedStatistics)test.getMultipleStatistics().get(0)).getStatistics().forEach((k,v)->System.out.println(k + " : " + v));
+
+
+>>>>>>> Stashed changes
     }
 }

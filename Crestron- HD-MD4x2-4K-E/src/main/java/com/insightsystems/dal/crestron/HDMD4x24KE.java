@@ -202,7 +202,7 @@ public class HDMD4x24KE extends TelnetCommunicator implements Controller, Pingab
                 for (int i = 1; i <= NUM_OUTPUTS;i++){
                     if ((cp.getProperty()+"Source").equals(outputNames[i-1]+"Source")){
                         send(cmdRoute.replace("<i>",cp.getValue().toString()).replace("<o>", String.valueOf(i)));
-                        //Todo ad check for response.
+                        //Todo add check for response.
                         return;
                     }
                 }

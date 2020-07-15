@@ -1,6 +1,7 @@
 package com.insightsystems.dal.serverlink;
 
 import com.avispl.symphony.api.dal.control.Controller;
+import com.avispl.symphony.api.dal.dto.control.AdvancedControllableProperty;
 import com.avispl.symphony.api.dal.dto.control.ControllableProperty;
 import com.avispl.symphony.api.dal.dto.monitor.ExtendedStatistics;
 import com.avispl.symphony.api.dal.dto.monitor.Statistics;
@@ -8,9 +9,7 @@ import com.avispl.symphony.api.dal.monitor.Monitorable;
 import com.avispl.symphony.api.dal.ping.Pingable;
 import com.avispl.symphony.dal.communicator.HttpCommunicator;
 
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -22,6 +21,10 @@ import static java.util.Collections.singletonList;
  *
  ***** v 1.1
  *  - Added additional stats - FirmwareVersion and Mac-address
+ *
+ ***** v1.2
+ *  - Updated controls to AdvancedControllableProperties
+ *
  */
 public class SLPSB1008H extends HttpCommunicator implements Monitorable, Pingable, Controller {
     private final String[][] pduInfo = new String[8][2];
@@ -45,25 +48,23 @@ public class SLPSB1008H extends HttpCommunicator implements Monitorable, Pingabl
     @Override
     protected void authenticate() { }
 
-    @SuppressWarnings("deprecation")
     public List<Statistics> getMultipleStatistics() throws Exception {
         getNames();
         final String currentDraw = getStatus();
         ExtendedStatistics deviceStatistics = new ExtendedStatistics();
         Map<String,String> statistics = new HashMap<>();
-        Map<String,String> control = new HashMap<>();
+        List<AdvancedControllableProperty> controls = new ArrayList<>();
 
-        for (String[] strings : pduInfo) {
-            statistics.put(strings[0], strings[1]);
-            control.put(strings[0], "Toggle");
+        for (String[] port : pduInfo) {
+            statistics.put(port[0], port[1]);
+            controls.add(new AdvancedControllableProperty(port[0],new Date(),createSwitch(),port[1]));
         }
         statistics.put("CurrentDraw",currentDraw);
         final String systemPage = this.doGet("/system.htm");
-        //System.out.println(systemPage);
         statistics.put("FirmwareVersion",regexFind(systemPage,">Firmware\\s+Version</font>[\\s\\S]+?>([.:[-]\\w\\d]+)</font>"));
         statistics.put("MacAddress",regexFind(systemPage,">MAC\\s+Address</font>[\\s\\S]+?>([.:\\w\\d]+)</font>"));
         deviceStatistics.setStatistics(statistics);
-        deviceStatistics.setControl(control);
+        deviceStatistics.setControllableProperties(controls);
 
         return singletonList(deviceStatistics);
     }
@@ -136,9 +137,15 @@ public class SLPSB1008H extends HttpCommunicator implements Monitorable, Pingabl
         return split[2];
     }
 
+    private AdvancedControllableProperty.Switch createSwitch(){
+        AdvancedControllableProperty.Switch aSwitch = new AdvancedControllableProperty.Switch();
+        aSwitch.setLabelOn("On");
+        aSwitch.setLabelOff("off");
+        return aSwitch;
+    }
+
     private void controlOutlets(String outletString,boolean requestedState) throws Exception{
         final char[] outlets = outletString.toCharArray();
-        //System.out.println(outletString);
         char[] control = {'0','0','0','0','0','0','0','0'};
         for (char outlet : outlets) {
             control[outlet - '0'] = '1';
@@ -162,8 +169,7 @@ public class SLPSB1008H extends HttpCommunicator implements Monitorable, Pingabl
         }
         return output.toString();
     }
-    
-    @SuppressWarnings("deprecation")
+
     public static void main(String[] args) throws Exception {
         SLPSB1008H test = new SLPSB1008H();
         test.setHost("10.164.69.10");
@@ -172,8 +178,6 @@ public class SLPSB1008H extends HttpCommunicator implements Monitorable, Pingabl
         ExtendedStatistics res = (ExtendedStatistics) test.getMultipleStatistics().get(0);
         System.out.println("Statistics.");
         res.getStatistics().forEach((k, v) -> System.out.println(k + " : " + v));
-        System.out.println("Controls.");
-        res.getControl().forEach((k, v) -> System.out.println(k + " : " + v));
     }
 }
 
